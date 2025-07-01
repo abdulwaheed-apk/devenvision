@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
 import { Raleway } from "next/font/google";
 import "./globals.css";
+import { Header } from "@/components/landing";
 
 
 const ralway = Raleway({
   variable: "--font-raleway",
-    display:'swap',
-    subsets:['latin'],
-    weight:'variable'
+  display: 'swap',
+  subsets: ['latin'],
+  weight: 'variable' // Uncomment if using variable font'
 })
 
 export const metadata: Metadata = {
@@ -21,10 +22,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${ralway.variable}`}>
       <body
-        className={`${ralway.variable} antialiased`}
+        className={`antialiased max-w-7xl mx-auto px-4 sm:px-6 lg:px-8`}
       >
+        <Header />
         {children}
       </body>
     </html>

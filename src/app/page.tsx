@@ -1,4 +1,4 @@
-import {Metadata} from "next";
+import { Metadata } from "next";
 
 
 export const metadata: Metadata = {
@@ -6,9 +6,6 @@ export const metadata: Metadata = {
   description: 'At DevEnvision, we aim to be the leading catalyst for digital transformation, offering top-tier software development, expert staffing solutions, and comprehensive technology consultancy—all in one Software Development Company.',
 }
 export default function HomePage() {
-  return (
-<h1>
-  Hello World
-</h1>
+  return (''
   );
 }
