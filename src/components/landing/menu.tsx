@@ -258,28 +258,28 @@ export function MainNav() {
           <SheetTrigger
             className='lg:hidden'>
             <span className="sr-only">Open main menu</span>
-            <Menu onClick={() => setMobileMenuOpen(true)} className="block h-6 w-6" />
+            <Menu onClick={() => setMobileMenuOpen(true)} className="block h-6 w-6 -me-4" />
           </SheetTrigger>
-          <SheetContent>
+          <SheetContent className='lg:hidden bg-[#f2f4f7] px-4 py-10'>
             <SheetTitle className='sr-only'>Menu for small screens</SheetTitle>
             {isMobileMenuOpen && (
               <div className="lg:hidden mt-2">
                 <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                  <NavLink href="#" className="block !text-sm">Home</NavLink>
+                  <NavLink href="#" className="block !text-sm !p-4 !rounded-lg hover:!bg-white">Home</NavLink>
                   {/* You would likely want a simpler accordion-style menu for services on mobile */}
                   <details className="group">
-                    <summary className="flex items-center justify-between w-full p-2 text-sm font-medium text-slate-700 rounded-md hover:bg-slate-100 cursor-pointer">
+                    <summary className="flex items-center justify-between w-full p-4 !rounded-lg hover:!bg-white text-sm font-medium text-[#051634] cursor-pointer">
                       Services
                       <ChevronDown className="h-4 w-4 transition-transform duration-200 group-open:rotate-180" />
                     </summary>
-                    <div className="pl-4 mt-1 space-y-1">
+                    <div className="pl-4 mt-1 space-y-1 !p-4 !rounded-lg !bg-white">
                       {services.map(service => (
-                        <NavLink key={service.title} href={service.href} className="block !text-sm">{service.title}</NavLink>
+                        <NavLink key={service.title} href={service.href} className="block !text-sm !p-4 !rounded-lg hover:!bg-[#f2f4f7]">{service.title}</NavLink>
                       ))}
                     </div>
                   </details>
                   {navItems.map((item) => (
-                    <NavLink key={item.title} href={item.href} className="block !text-sm">
+                    <NavLink key={item.title} href={item.href} className="block !text-sm !p-4 !rounded-lg hover:!bg-white">
                       {item.title}
                     </NavLink>
                   ))}
