@@ -1,5 +1,4 @@
 'use client';
-
 import React, { useState } from 'react';
 import { ChevronDown, Menu, X } from 'lucide-react';
 import { cn } from "@/lib/utils";
@@ -9,150 +8,9 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-
-type SubService = {
-  title: string;
-  href: string;
-  description: string;
-};
-
-type Service = {
-  title: string;
-  href: string;
-  sub?: SubService[];
-};
-
-const services: Service[] = [
-  {
-    title: "Development Services",
-    href: "#",
-    sub: [
-      {
-        title: "Enterprise Software Development",
-        href: "#",
-        description: "Custom software solutions tailored to your large-scale business needs and goals.",
-      },
-      {
-        title: "Artificial Intelligence Agents",
-        href: "#",
-        description: "Develop intelligent agents to automate tasks, analyze data, and enhance user interaction.",
-      },
-      {
-        title: "Cloud Development Services",
-        href: "#",
-        description: "Leverage the power of the cloud with our scalable and secure development services.",
-      },
-      {
-        title: "Application Modernization",
-        href: "#",
-        description: "Update your legacy systems to modern, efficient, and maintainable applications.",
-      },
-      {
-        title: "AI Development Services",
-        href: "#",
-        description: "Full-cycle AI development to build innovative and intelligent business solutions.",
-      },
-    ],
-  },
-  {
-    title: "Product Solutions",
-    href: "#",
-  },
-  {
-    title: "Global Capacity Center",
-    href: "#",
-    sub: [
-      {
-        title: "Dedicated Development Teams",
-        href: "#",
-        description: "Build a dedicated team of experts to act as an extension of your in-house resources.",
-      },
-      {
-        title: "Offshore Development Center",
-        href: "#",
-        description: "Establish a cost-effective offshore center for your development and operational needs.",
-      },
-      {
-        title: "Managed IT Services",
-        href: "#",
-        description: "Comprehensive IT management to ensure your infrastructure is reliable and efficient.",
-      },
-      {
-        title: "Quality Assurance and Testing",
-        href: "#",
-        description: "Ensure your products are bug-free and performant with our rigorous QA services.",
-      },
-    ],
-  },
-  {
-    title: "Staff Augmentation",
-    href: "#",
-  },
-  {
-    title: "Platforms",
-    href: "#",
-  },
-  {
-    title: "Technologies",
-    href: "#",
-  },
-];
-
-const navItems: { title: string; href: string; }[] = [
-  {
-    title: "Portfolio",
-    href: "#portfolio",
-  },
-  {
-    title: "About Us",
-    href: "#about-us",
-  },
-  {
-    title: "Contact Us",
-    href: "#contact-us",
-  },
-];
-
-
-// --- UI COMPONENTS ---
-// These would typically be in your components/ui folder from shadcn/ui
-
-// Helper for combining class names
-
-// A custom Link component to be used within the navigation
-const NavLink = ({ href, children, className = '' }: {
-  href: string,
-  children: Readonly<React.ReactNode>,
-  className?: string;
-}) => (
-  <a href={href} className={cn("text-[22px] font-normal capitalize text-[#051634] hover:font-semibold hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-b hover:from-[#1D91FF] hover:to-[#5EFFBB] transition-colors px-3 py-2 rounded-md", className)}>
-    {children}
-  </a>
-);
-
-// The ListItem component for dropdowns, styled similarly to shadcn/ui examples
-const ListItem = React.forwardRef(({ className, title, children, href, ...props }, ref) => {
-  return (
-    <li>
-      <a
-        ref={ref}
-        href={href}
-        className={cn(
-          "block select-none space-y-1.5 max-w-64 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-[#F2F4F7] focus:bg-[#F2F4F7]",
-          className
-        )}
-        {...props}
-      >
-        <div className="text-base font-bold text-[#051634]">{title}</div>
-        <p className="line-clamp-2 text-base font-normal leading-snug text-[#111]">
-          {children}
-        </p>
-      </a>
-    </li>
-  );
-});
-ListItem.displayName = "ListItem";
-
+import { navItems, services } from '@/data';
+import { Service } from '@/types/landing';
+import { ListItem, NavLink } from '../ui/nav-link';
 
 // --- MAIN NAVIGATION COMPONENT ---
 
@@ -286,11 +144,7 @@ export function MainNav() {
             )}
           </SheetContent>
         </Sheet>
-
       </div>
-
-      {/* Was here */}
-
     </nav>
   );
 }

@@ -1,2 +1,5 @@
 export * from './menu'
 export * from './header'
+export * from './hero-section'
+export * from './clients-carousel'
+export * from './what-we-do'
