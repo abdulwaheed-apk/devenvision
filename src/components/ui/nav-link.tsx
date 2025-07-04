@@ -1,6 +1,13 @@
 import * as React from 'react'
 import { cn } from "@/lib/utils";
 
+interface ListItemProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
+    className?: string;
+    title: string;
+    href: string;
+    children?: React.ReactNode;
+}
+
 const NavLink = ({ href, children, className = '' }: {
     href: string,
     children: Readonly<React.ReactNode>,
@@ -11,7 +18,7 @@ const NavLink = ({ href, children, className = '' }: {
     </a>
 );
 
-const ListItem = React.forwardRef(({ className, title, children, href, ...props }, ref) => {
+const ListItem = React.forwardRef<HTMLAnchorElement, ListItemProps>(({ className, title, children, href, ...props }, ref) => {
     return (
         <li>
             <a
