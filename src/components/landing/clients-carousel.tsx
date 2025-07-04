@@ -1,7 +1,7 @@
-import {Carousel, CarouselContent, CarouselItem} from "@/components/ui/carousel";
-import {Card} from "@/components/ui/card";
 import Image from "next/image";
-import {GradientSpan} from "@/components/gradient-span";
+import { Card } from "@/components/ui/card";
+import { GradientSpan } from "@/components/gradient-span";
+import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
 
 export function ClientsCarousel() {
     return (

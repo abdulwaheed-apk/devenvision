@@ -1,6 +1,6 @@
 import { Fragment } from 'react'
 import { Metadata } from 'next'
-import { ClientsCarousel, HeroSection, WhatWeDo } from '@/components/landing'
+import { ClientsCarousel, HeroSection, WhatWeDo, WhatWeOffer } from '@/components/landing'
 
 export const metadata: Metadata = {
     title: 'DevEnvision | Software Development Company | Digital Solutions, Staffing, and Software - All Under One Roof',
@@ -13,6 +13,7 @@ export default function HomePage() {
             <HeroSection />
             <ClientsCarousel />
             <WhatWeDo />
+            <WhatWeOffer />
         </Fragment>
     )
 }

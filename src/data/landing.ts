@@ -124,3 +124,30 @@ export const stats = [
         value: '92%',
     },
 ]
+
+export const whatWeOffer = [
+    {
+        imgUrl:'/what-we-offer-1.webp',
+        title:'Mobile App Development'
+    },
+    {
+        imgUrl:'/what-we-offer-2.webp',
+        title:'Web App Development'
+    },
+    {
+        imgUrl:'/what-we-offer-3.webp',
+        title:'Generative AI'
+    },
+    {
+        imgUrl:'/what-we-offer-4.webp',
+        title:'UI/UX Design'
+    },
+    {
+        imgUrl:'/what-we-offer-5.webp',
+        title:'Custom Development'
+    },
+    {
+        imgUrl:'/what-we-offer-6.webp',
+        title:'Digital Marketing'
+    },
+]

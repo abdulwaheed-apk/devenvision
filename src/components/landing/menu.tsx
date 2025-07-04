@@ -2,15 +2,15 @@
 import React, { useState } from 'react';
 import { ChevronDown, Menu, X } from 'lucide-react';
 import { cn } from "@/lib/utils";
+import { navItems, services } from '@/data';
+import { Service } from '@/types/landing';
+import { ListItem, NavLink } from '@/components/ui/nav-link';
 import {
   Sheet,
   SheetContent,
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import { navItems, services } from '@/data';
-import { Service } from '@/types/landing';
-import { ListItem, NavLink } from '../ui/nav-link';
 
 // --- MAIN NAVIGATION COMPONENT ---
 
