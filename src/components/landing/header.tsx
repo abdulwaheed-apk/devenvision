@@ -6,12 +6,17 @@ import { MainNav } from "@/components/landing/menu";
 
 export function Header() {
     return (
-        <header className={'w-full px-4 py-2 h-auto max-h-32'}>
+        <header className={'w-full sm:px-4 sm:py-2 h-auto max-h-32'}>
             <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center'>
 
                 <div className="justify-center items-center flex">
                     <Link href={'/'}>
-                        <Image src={'/devenvision/devenvision-header-logo.svg'} alt={'devenvision'} width={228} height={128} className={'w-full h-full min-h-24'} />
+                        <Image
+                            src={'/devenvision/devenvision-header-logo.png'}
+                            alt={'devenvision'}
+                            width={228}
+                            height={128}
+                            className={'w-full h-full min-h-16 sm:min-h-24'} />
                     </Link>
                 </div>
                 <MainNav />

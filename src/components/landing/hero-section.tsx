@@ -20,9 +20,9 @@ export function HeroSection() {
 
             {/* Content Container: Applies max-w-7xl to the text/buttons */}
             <div className="relative z-10 h-full flex items-start justify-center">
-                <div className="max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 text-center h-full flex items-center justify-start">
-                    <Card className='rounded-lg w-auto my-auto text-start py-6 px-10 stroke bg-transparent backdrop-blur-xs stroke-[#5B5B5B] shadow-none'>
-                        <h1 className="text-white text-4xl sm:text-5xl md:text-6xl lg:text-[64px] font-heading font-bold leading-24 uppercase">
+                <div className="max-w-7xl w-full mx-auto px-2 sm:px-6 lg:px-8 text-center h-full flex items-center justify-start">
+                    <Card className='rounded-lg w-auto my-auto text-start py-6 px-6 sm:px-10 stroke bg-transparent backdrop-blur-xs stroke-[#5B5B5B] shadow-none gap-4 sm:gap-6'>
+                        <h1 className="text-white text-3xl sm:text-5xl md:text-6xl lg:text-[64px] font-heading font-bold leading-snug uppercase">
                             Empowering Businesses
                             <br />
                             <GradientSpan>

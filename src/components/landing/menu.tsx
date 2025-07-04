@@ -114,13 +114,19 @@ export function MainNav() {
           <SheetTrigger
             className='lg:hidden'>
             <span className="sr-only">Open main menu</span>
-            <Menu onClick={() => setMobileMenuOpen(true)} className="block h-6 w-6 -me-4" />
+            <Menu
+              onClick={() => setMobileMenuOpen(true)}
+              className="block h-6 w-6 -me-4"
+            />
+
+
+            {/* <Bars2Icon onClick={() => setMobileMenuOpen(true)} className="block h-6 w-6 -me-4" /> */}
           </SheetTrigger>
           <SheetContent className='lg:hidden bg-[#f2f4f7] px-4 py-10'>
             <SheetTitle className='sr-only'>Menu for small screens</SheetTitle>
             {isMobileMenuOpen && (
               <div className="lg:hidden mt-2">
-                <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <div className="pt-2 pb-3 space-y-1 sm:px-3">
                   <NavLink href="#" className="block !text-sm !p-4 !rounded-lg hover:!bg-white">Home</NavLink>
                   {/* You would likely want a simpler accordion-style menu for services on mobile */}
                   <details className="group">

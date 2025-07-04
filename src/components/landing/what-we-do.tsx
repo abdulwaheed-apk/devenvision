@@ -1,17 +1,15 @@
-import { CircleCheck } from "lucide-react";
+import Image from "next/image";
 import { GradientSpan } from "@/components/gradient-span";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { points, stats } from "@/data";
-import Image from "next/image";
+import { CircleCheck } from "lucide-react";
 
 export function WhatWeDo() {
 
     return (
         <section className={'max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-20 bg-white space-y-15'}>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
-                {/* <div className={'w-full bg-stone-50 shadow-sm'}>
-                </div> */}
                 <BentoGrid />
                 <div className={'py-4 space-y-6'}>
                     <h2 className={'text-4xl sm:text-[44px] text-[#111] font-heading uppercase font-bold'}>
@@ -45,7 +43,7 @@ export function WhatWeDo() {
                 {stats.map(stat => (
                     <div className="text-center" key={stat.title}>
                         <p className="font-heading text-4xl sm:text-[44px] font-bold text-[#111]">{stat.value}</p>
-                        <h4 className="font-bold text-2xl text-black">{stat.title}</h4>
+                        <h3 className="font-bold text-2xl text-black">{stat.title}</h3>
                     </div>
                 ))}
             </Card>
@@ -87,7 +85,7 @@ const BentoGrid = () => {
                                 <div className="bg-[#F4F7FB] rounded-lg p-2 text-lg font-bold text-center content-center size-20 mx-auto ">
                                     <GradientSpan className="leading-tight"> 99% </GradientSpan>
                                 </div>
-                                <h4 className="text-lg font-bold text-[#051634] capitalize">Satisfied Clients</h4>
+                                <h2 className="text-lg font-bold text-[#051634] capitalize">Satisfied Clients</h2>
                             </div>
                         </div>
                     </div>
