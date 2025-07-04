@@ -55,7 +55,7 @@ export function WhatWeDo() {
 
 const BentoGrid = () => {
     return (
-        <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
+        <div className="mx-auto w-full px-6 lg:max-w-7xl lg:px-8">
             <div className="grid gap-4 lg:grid-cols-2 lg:grid-rows-2">
                 <div className="relative lg:row-span-2">
                     <div className="absolute inset-px rounded-lg bg-white lg:rounded-l-4xl" />
@@ -67,7 +67,6 @@ const BentoGrid = () => {
                             width={276}
                             height={425}
                         />
-
                     </div>
                     <div className="pointer-events-none absolute inset-px rounded-lg shadow-sm outline outline-black/5 lg:rounded-l-4xl" />
                 </div>
@@ -91,7 +90,6 @@ const BentoGrid = () => {
                                 <h4 className="text-lg font-bold text-[#051634] capitalize">Satisfied Clients</h4>
                             </div>
                         </div>
-
                     </div>
                     <div className="pointer-events-none absolute inset-px rounded-lg shadow-none outline outline-black/10" />
                 </div>

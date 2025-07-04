@@ -16,7 +16,7 @@ export function WhatWeOffer() {
                     {whatWeOffer.map((item, index) => (
                         <div
                             key={index}
-                            className="bg-transparent rounded-xl relative shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden group"
+                            className="bg-transparent rounded-xl relative shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden group cursor-pointer"
                         >
                             <div className="relative overflow-hidden">
                                 <Image
