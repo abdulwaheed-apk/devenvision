@@ -16,16 +16,17 @@ export function ClientsCarousel() {
                     }}
                     className="w-full max-w-full my-6"
                 >
-                    <CarouselContent>
+                    <CarouselContent className="gap-x-7">
                         {Array.from({ length: 10 }).map((_, index) => (
                             <CarouselItem key={index} className="basis-auto">
                                 <div className="p-1">
-                                    <Card className='flex flex-col justify-center items-center h-20 w-52 rounded-lg bg-white border border-white shadow-none'>
+                                    <Card className='flex flex-col justify-center items-center h-20 w-52 rounded-lg bg-white border border-white shadow-none contain-content text-center'>
                                         <Image
                                             src={'/client.png'}
                                             width={200}
                                             height={80}
                                             alt='Client logo'
+                                            className="cursor-grab"
                                         />
                                     </Card>
                                 </div>

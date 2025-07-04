@@ -34,7 +34,7 @@ export function WhatWeDo() {
                     </ul>
                     <Button
                         variant={'gradient'}
-                        className={'px-8 py-6 mt-6'}
+                        className={'px-8 py-6 mt-6 text-base'}
                     >
                         Explore More
                     </Button>
@@ -82,16 +82,16 @@ const BentoGrid = () => {
                 <div className="relative max-lg:row-start-3 lg:col-start-2 lg:row-start-2">
                     <div className="absolute inset-px rounded-lg bg-white" />
                     <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)]">
-                        <div className="rounded-lg bg-sky-50/5 py-6 px-7 h-full flex justify-center items-center">
-                            <div className="space-y-1 border-4 border-spacing-0.5 border-dashed border-blue-500 rounded-lg h-full w-full grid place-content-center p-2">
-                                <div className="bg-sky-100/60 rounded-lg p-2 text-lg font-bold text-center content-center size-20 mx-auto ">
+                        <div className="rounded-lg bg-[#F4F7FB] py-6 px-7 h-full flex justify-center items-center">
+                            <div className="space-y-1 border-2 border-spacing-0.5 bg-white border-dashed border-blue-500 rounded-lg h-full w-full grid place-content-center p-2">
+                                <div className="bg-[#F4F7FB] rounded-lg p-2 text-lg font-bold text-center content-center size-20 mx-auto ">
                                     <GradientSpan className="leading-tight"> 99% </GradientSpan>
                                 </div>
                                 <h4 className="text-lg font-bold text-[#051634] capitalize">Satisfied Clients</h4>
                             </div>
                         </div>
                     </div>
-                    <div className="pointer-events-none absolute inset-px rounded-lg shadow-none outline outline-black/10" />
+                    {/* <div className="pointer-events-none absolute inset-px rounded-lg shadow-none outline outline-black/5" /> */}
                 </div>
 
             </div>

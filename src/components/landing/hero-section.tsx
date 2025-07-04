@@ -22,7 +22,7 @@ export function HeroSection() {
             <div className="relative z-10 h-full flex items-start justify-center">
                 <div className="max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 text-center h-full flex items-center justify-start">
                     <Card className='rounded-lg bg-white/[.08] w-auto my-auto text-start py-6 px-10 border border-white/15 shadow-none'>
-                        <h1 className="text-white text-4xl sm:text-5xl md:text-6xl lg:text-[64px] font-heading font-bold leading-snug uppercase">
+                        <h1 className="text-white text-4xl sm:text-5xl md:text-6xl lg:text-[64px] font-heading font-bold leading-24 uppercase">
                             Empowering Businesses
                             <br />
                             <GradientSpan>
@@ -31,7 +31,7 @@ export function HeroSection() {
                             <br />
                             Digital Solutions
                         </h1>
-                        <p className="mt-0 sm:mt-4 text-base font-medium text-[#DEDEDE] max-w-2xl mx-auto">
+                        <p className="text-base font-medium text-[#DEDEDE] max-w-2xl mx-auto">
                             DevEnvison offers cutting-edge software development and digital transformation services tailored to businesses of all sizes.
                         </p>
                         <Button
