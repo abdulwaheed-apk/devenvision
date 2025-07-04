@@ -3,6 +3,7 @@ import { GradientSpan } from "@/components/gradient-span";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { points, stats } from "@/data";
+import Image from "next/image";
 
 export function WhatWeDo() {
 
@@ -59,20 +60,24 @@ const BentoGrid = () => {
                 <div className="relative lg:row-span-2">
                     <div className="absolute inset-px rounded-lg bg-white lg:rounded-l-4xl" />
                     <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] lg:rounded-l-[calc(2rem+1px)]">
-                        <img
-                            alt=""
+                        <Image
+                            alt="about section gallery first image"
                             src="/about-two.png"
                             className="size-full object-contain object-top"
+                            width={276}
+                            height={425}
                         />
 
                     </div>
                     <div className="pointer-events-none absolute inset-px rounded-lg shadow-sm outline outline-black/5 lg:rounded-l-4xl" />
                 </div>
                 <div className="relative max-lg:row-start-1">
-                    <img
-                        alt=""
+                    <Image
+                        alt="about section gallery second image"
                         src="/about-two-2.png"
                         className="size-full object-contain object-center"
+                        width={275}
+                        height={192}
                     />
                 </div>
                 <div className="relative max-lg:row-start-3 lg:col-start-2 lg:row-start-2">
