@@ -13,6 +13,7 @@ export function ClientsCarousel() {
                 <Carousel
                     opts={{
                         align: "start",
+                        active: true
                     }}
                     className="w-full max-w-full my-6"
                 >

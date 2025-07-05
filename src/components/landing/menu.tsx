@@ -42,7 +42,7 @@ function ServicesMegaMenu() {
           </div>
 
           {/* Right Panel: Shows sub-services for the active service */}
-          <div className="w-auto min-w-max max-w-[44rem] m-2 p-6 bg-white rounded-lg">
+          <div className="w-auto min-w-max max-w-[44rem] m-4 p-4 bg-white rounded-lg">
             {activeService && activeService.sub ? (
               <div className='w-auto'>
                 {/* <h3 className="text-base hidden font-bold ">{activeService.title}</h3> */}

@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { points, stats } from "@/data";
 import { CircleCheck } from "lucide-react";
+import Counter from "./counter";
 
 export function WhatWeDo() {
 
@@ -43,7 +44,9 @@ export function WhatWeDo() {
                 className="w-full rounded-xl p-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 shadow-[0_0_60px_0_rgba(0,0,0,0.1)] border-none">
                 {stats.map(stat => (
                     <div className="text-center" key={stat.title}>
-                        <p className="font-heading text-4xl sm:text-[44px] font-bold text-[#111]">{stat.value}</p>
+                        <p className="font-heading text-4xl sm:text-[44px] font-bold text-[#111]">
+                            <Counter target={stat.value} suffix={stat.suffix} />
+                        </p>
                         <h3 className="font-bold text-2xl text-black">{stat.title}</h3>
                     </div>
                 ))}

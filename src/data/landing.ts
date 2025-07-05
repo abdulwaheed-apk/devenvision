@@ -109,45 +109,49 @@ export const points = [
 export const stats = [
     {
         title: 'Happy Clients',
-        value: '200+',
+        value: 200,
+        suffix: '+',
     },
     {
         title: 'Project Delivered',
-        value: '1,000+',
+        value: 1000,
+        suffix: '+',
     },
     {
         title: 'Countries Served',
-        value: '15+',
+        value: 15,
+        suffix: '+',
     },
     {
         title: 'Returning Clients',
-        value: '92%',
+        value: 92,
+        suffix: '%',
     },
 ]
 
 export const whatWeOffer = [
     {
-        imgUrl:'/what-we-offer-1.webp',
-        title:'Mobile App Development'
+        imgUrl: '/what-we-offer-1.webp',
+        title: 'Mobile App Development',
     },
     {
-        imgUrl:'/what-we-offer-2.webp',
-        title:'Web App Development'
+        imgUrl: '/what-we-offer-2.webp',
+        title: 'Web App Development',
     },
     {
-        imgUrl:'/what-we-offer-3.webp',
-        title:'Generative AI'
+        imgUrl: '/what-we-offer-3.webp',
+        title: 'Generative AI',
     },
     {
-        imgUrl:'/what-we-offer-4.webp',
-        title:'UI/UX Design'
+        imgUrl: '/what-we-offer-4.webp',
+        title: 'UI/UX Design',
     },
     {
-        imgUrl:'/what-we-offer-5.webp',
-        title:'Custom Development'
+        imgUrl: '/what-we-offer-5.webp',
+        title: 'Custom Development',
     },
     {
-        imgUrl:'/what-we-offer-6.webp',
-        title:'Digital Marketing'
+        imgUrl: '/what-we-offer-6.webp',
+        title: 'Digital Marketing',
     },
 ]
