@@ -39,7 +39,8 @@ export function WhatWeDo() {
 
                 </div>
             </div>
-            <Card className="w-full rounded-xl p-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 shadow-2xl border-none">
+            <Card
+                className="w-full rounded-xl p-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 shadow-[0_0_60px_0_rgba(0,0,0,0.1)] border-none">
                 {stats.map(stat => (
                     <div className="text-center" key={stat.title}>
                         <p className="font-heading text-4xl sm:text-[44px] font-bold text-[#111]">{stat.value}</p>

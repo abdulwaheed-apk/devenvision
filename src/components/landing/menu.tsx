@@ -19,7 +19,7 @@ function ServicesMegaMenu() {
   const [activeService, setActiveService] = useState<Service | null>(services.find(s => s.sub) || null);
 
   return (
-    <div className="absolute top-full left-0 mt-6 w-auto">
+    <div className="absolute top-full left-0 mt-12 w-auto">
       <div className="bg-[#f2f4f7] rounded-lg border border-transparent overflow-hidden">
         <div className="flex">
           {/* Left Panel: List of all services */}
